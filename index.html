@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Disprol | Link Tree Super Rio ExpoFood 2026</title>
+    <meta name="description" content="Central de links da Disprol para a Super Rio ExpoFood 2026." />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;700;800&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="linktree.css" />
+  </head>
+  <body>
+    <div class="page-bg"></div>
+    <main class="app">
+      <header class="hero">
+        <img class="logo-disprol" src="assets/disprol-logo.svg" alt="Logo Disprol Atacadista" />
+        <p class="hero-subtitle">Conecte-se à Disprol na <strong>Super Rio ExpoFood 2026</strong></p>
+      </header>
+
+      <section class="stand-view" aria-label="Visualização do estande">
+        <div class="stand-rotator" id="standRotator">
+          <img src="assets/stand-left.svg" alt="Estande vista esquerda" data-view="left" />
+          <img src="assets/stand-front.svg" alt="Estande vista frontal" data-view="front" class="is-visible" />
+          <img src="assets/stand-right.svg" alt="Estande vista direita" data-view="right" />
+        </div>
+      </section>
+
+      <nav class="links-grid" aria-label="Navegação principal">
+        <button class="link-btn" data-target="historia" data-rotation="left"><span>🎬</span> Nossa História</button>
+        <a class="link-btn" href="https://www.instagram.com/disprolatacadista" target="_blank" rel="noopener noreferrer"><span>📸</span> Siga-nos no Instagram</a>
+        <button class="link-btn" data-target="promocoes" data-rotation="right"><span>🛒</span> Promoções Exclusivas</button>
+        <button class="link-btn" data-target="reforma" data-rotation="right"><span>📘</span> Reforma Tributária Descomplicada</button>
+        <a class="link-btn" href="https://forms.gle/" target="_blank" rel="noopener noreferrer"><span>🤝</span> Seja Nosso Cliente</a>
+      </nav>
+
+      <section class="content-card is-active" id="home">
+        <h1>Bem-vindo(a) ao nosso estande digital</h1>
+        <p>Explore nossos conteúdos e links rápidos. Cada seção muda a visualização do estande para tornar a experiência mais imersiva.</p>
+      </section>
+
+      <section class="content-card" id="historia">
+        <div class="card-head">
+          <h2>Nossa História</h2>
+          <button class="btn-back" data-target="home" data-rotation="front">← Voltar ao início</button>
+        </div>
+        <div class="video-wrap">
+          <iframe
+            src="https://www.youtube.com/embed/dQw4w9WgXcQ"
+            title="Vídeo institucional Disprol"
+            loading="lazy"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+            referrerpolicy="strict-origin-when-cross-origin"
+            allowfullscreen>
+          </iframe>
+        </div>
+      </section>
+
+      <section class="content-card" id="promocoes">
+        <div class="card-head">
+          <h2>Promoções Exclusivas</h2>
+          <button class="btn-back" data-target="home" data-rotation="front">← Voltar ao início</button>
+        </div>
+        <p class="card-intro">Vitrine Digital da Disprol para a feira Super Rio ExpoFood 2026.</p>
+        <div class="products-grid">
+          <article class="product"><h3>Arroz Premium 5kg</h3><p>De R$ 32,90 por <strong>R$ 26,90</strong></p></article>
+          <article class="product"><h3>Azeite Extra Virgem 500ml</h3><p>De R$ 29,90 por <strong>R$ 23,90</strong></p></article>
+          <article class="product"><h3>Café Torrado 500g</h3><p>De R$ 18,50 por <strong>R$ 14,99</strong></p></article>
+          <article class="product"><h3>Leite Integral 1L (12 un.)</h3><p>De R$ 58,80 por <strong>R$ 49,90</strong></p></article>
+        </div>
+      </section>
+
+      <section class="content-card" id="reforma">
+        <div class="card-head">
+          <h2>Reforma Tributária Descomplicada</h2>
+          <button class="btn-back" data-target="home" data-rotation="front">← Voltar ao início</button>
+        </div>
+        <p>A Reforma Tributária busca simplificar a cobrança de impostos no Brasil, reduzindo burocracias para empresas e consumidores.</p>
+        <p>A proposta unifica tributos em um modelo de IVA dual, trazendo mais clareza, previsibilidade e transparência na formação de preços.</p>
+        <p>Na Disprol, acompanhamos cada atualização para apoiar nossos clientes em decisões seguras e estratégicas.</p>
+      </section>
+
+      <footer class="footer">
+        <a href="https://www.superrio.com.br/sre" target="_blank" rel="noopener noreferrer" class="event-link">
+          <img src="assets/sre-logo.svg" alt="Logo Super Rio ExpoFood" />
+          <span>Saiba mais sobre o evento</span>
+        </a>
+      </footer>
+    </main>
+    <script src="linktree.js"></script>
+  </body>
+</html>
